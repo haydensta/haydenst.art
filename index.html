@@ -132,23 +132,29 @@ a:active {
         justify-content: start; /* Spacing out the elements */
         align-items: center; /* Centering vertically */
         margin-bottom: 20px; /* Added margin for spacing */
+        flex-direction: row;
       }
 
       .container .image {
-        width: 70%;
-        margin-left: 390px;*/
+        /* width: 70%; */
+        order: 1;
       }
 
       .container .text-links {
-        width: 70%;
-        margin-left: 20px;*/
+        /* width: auto; */
+        margin-left: 20px;
+        order: 2;
       }
       
-      .container .form {
+      /* .container .form {
         flex-direction: column;
         width: 70%;
-        margin-left: 600px;
-      }
+         margin-left: 600px;
+      } */
+
+      /* .bottomSign{
+        padding-top: 300px;
+      } */
 
     </style>
     </head>
@@ -157,7 +163,7 @@ a:active {
     <h1><center>HAYDEN ST</center></h1>
     
      <center><p>|&nbsp;o&nbsp;|</p></center>
-    <center><p>_________________________________________|__|_________________________________________</p></center>
+    <center class="topSign"><p>_________________________________________|__|_________________________________________</p></center>
     <center><p style="color: #109111">|</p></center>
     
     <div class="container">
@@ -169,12 +175,16 @@ a:active {
       <div class="text-links">
         <h2><a href="./film">film</a></h2>
         <h2><a href="./writing">writing</a></h2>
-        <h2><a href="./other/socials">socials</a></h2>
+        <h2><a href="./other/socials.html">socials</a></h2>
         <h2><a href="aboutme.html">about</a></h2>
       </div>
     </div>
     
-    <center><p>_______________________________________________________________________________________</p></center>    
+    <center class="bottomSign"><p>_______________________________________________________________________________________</p></center>    
+    <!-- <script>
+      document.getElementsByClassName("bottomSign").style.padding-bottom = 300px;
+      // 51 25 59
+    </script> -->
     <center><p>|&nbsp;o&nbsp;|</p></center>
     <center><p>|&nbsp;&ensp;&nbsp;|</p></center>
     <center><p>|&nbsp;o&nbsp;|</p></center>
