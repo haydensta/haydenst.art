@@ -8,7 +8,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>fiction</title>
+<title>scripts</title>
 <style> 
 
 ::-moz-selection {
@@ -66,9 +66,9 @@ h1 {
 }
 
 h2 {
-  font-family: 'Tahoma';
+  font-family: Tahoma; sans-serif;
   font-size: 35px;
-  line-height: 4px;
+  line-height: 0.0px;
   color:  #fff;
   background-color: transparent;
   text-decoration: none;
@@ -76,7 +76,7 @@ h2 {
 }
 
 p {
-  line-height: 0.0px;
+  line-height: 0.0;
 }
 
 .info-left {
@@ -157,43 +157,112 @@ a:active {
   text-align: center;
 }
 
-.container:hover .overlay {
-  opacity: 1;
+.right-box {
+  font-size: 30px;
+  padding-right: 37%;
+  text-align: right;
 }
-    </style>
-    </head>
-  <body>
-<br>
-    <h2><center>fiction</center></h2>
+
+.right-info {
+  font-size: 20px;
+  padding-right: 37%;
+  padding-bottom: 3%;
+  text-align: right;
+}
+
+.left-box {
+  font-size: 30px;
+  padding-left: 37%;
+  text-align: left;
+}
+
+.left-info {
+  font-size: 20px;
+  padding-left: 37%;
+  padding-bottom: 3%;
+  text-align: left;
+}
+
+.center-box {
+  margin: auto;
+  width: 100;
+  /* position: absolute; */
+  text-align: center;
+  /* padding-left: 50%; */
+  /* x:50%; */
+  /* padding-left: 50%; */
+  
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="center-box">
+  <br>
+    <h2>scripts</h2>
+  <br>
+  <!-- <p>|</p> -->
+  <!-- <p style="padding-bottom:3%">______________________________|______________________________</p> -->
+  
+  <!-- is this px position method the best way to go about this? check? Find a way to do %s -->
+  <p>|</p>
+  <p>|</p>
+  <hr style="width:37%; color:#f1f1f1; position:relative; bottom: 7px">
+  <br>
+  
+  <p style="font-size:20px">A couple of unproduced scripts by me.</p>
+  <br>
+
+  <p class="right-box" style="font-family:Courier"><a href="patient00.html"><b>Patient 00</b></a></p>
+    <p class="right-info"><i>feature, sci-fi/comedy, 106 pages</i></p>
+    <!-- <br> -->
+    <p class="left-box" style="font-family:Courier"><a href="overboard.html"><b>Overboard</b></a></p>
+    <p class="left-info"><i>pilot, comedy, 24 pages</i></p>
+    <br>
+
+  <!-- might need to br this -->
+  <p><a href="mailto:hstartzell@gmail.com">hstartzell@gmail.com</a></p>
+  <!-- <p>_____________________________________________________________</p> -->
+  <hr style="width:37%; color:#f1f1f1;">
+  <p>|</p>
+  <p>|</p>
+  <p>|</p>
+  <p>|</p>
+  <p>|</p>
+  <p>|</p>
+  <p>_______|_______</p>
+  <h2 style="font-family:Tahoma; padding-bottom:2%;"><a href="./">(writing)</a></h2>
+  <h2 style="font-family:Tahoma"><a href="../">(home)</a></h2>
+  <p>_______________</p>
+  <p>|</p>
+  <p>|</p>
+  <p>|</p>
+  <p>|</p>
+  <p>|</p>
+  <p>|</p>
+  <p>|</p>
+  <p>|</p>
+
+</div>
+<!-- <br>
+    <h2><center>scripts</center></h2>
 <br>
     <center><p>|</p></center>
     <center><p>______________________________|______________________________</p></center>
     <br>
-    <center><p style="font-size:20px">Some short stories I've written.</p></center><br>
-    <a href="/writing/lethimcook">
+    <center><p style="font-size:20px">A couple of unproduced scripts by me.</p></center><br>
     <p class="title-right"
-    align="right"><b>Let Him Cook!</b></a></p>
+    style="font-family:Courier"
+    align="right"><a href="patient00.html"><b>Patient 00</b></a></p>
     <p class="info-right"
-    align="right"><i>coming-of-age, 4458 words</i></p>
+    align="right"><i>feature, sci-fi/comedy, 106 pages</i></p>
     <br>
-    <p class="title-left"><a href="/writing/friedeggs"><b>Fried Eggs</b></a></p>
-    <p class="info-left"
-    align="left"><i>coming-of-age, 2281 words</i></p>
-    <br>
-    <a href="/writing/allthisstruckmeathisreminder">
-    <p class="title-right"
-    align="right"><b>All This Struck Me</b></p>
-    <p class="title-right"
-    align="right"><b>at His Reminder</b></p></a>
-    <p class="info-right"
-    align="right"><i>autofiction, 3411 words</i></p>
-    <br>
-    <a href="/writing/thebeardedmansleave">
-    <p class="title-left"><b>The Bearded</b></p>
     <p class="title-left"
-    align="left"><b>Man's Leave</b></p></a>
+    style="font-family:Courier"><a href="overboard.html"><b>Overboard</b></a></p>
     <p class="info-left"
-    align="left"><i>horror, 2927 words</i></p>
+    align="left"><i>pilot, comedy, 24 pages</i></p>
     <br><br>
     <p
     align="center"><a href="mailto:hstartzell@gmail.com">hstartzell@gmail.com</a></p>
@@ -208,10 +277,10 @@ a:active {
     <center><p>|</p></center>
     <center><p>_______|_______</p></center>
     <center><p style="color: #109111">–</p></center>
-    <center><h2 style="font-family: Tahoma"><a href="https://haydenst.neocities.org/writing">(writing)</a></h2></center>
+    <center><h2><a href="./">(writing)</a></h2></center>
     <center><p style="color: #109111">–</p></center>
-    <center><h2 style="font-family:Tahoma"><a href="https://haydenst.neocities.org/">(home)</a></h2></center>
-    <center><p>______________</p></center>
+    <center><h2><a href="../">(home)</a></h2></center>
+    <center><p>_______________</p></center>
     <center><p>|</p></center>
     <center><p>|</p></center>
     <center><p>|</p></center>
@@ -220,13 +289,9 @@ a:active {
     <center><p>|</p></center>
     <center><p>|</p></center>
     <center><p>|</p></center>
-    <center><p>|</p></center>
-    <center><p>|</p></center>
-    <center><p>|</p></center>
-    <center><p>|</p></center>
-    <center><a href="https://neocities.org/" target="_blank"><img src="/images/neocities.png"></a></center>
+   
 
-
+ -->
     
   </body>
 </html>
