@@ -22,7 +22,9 @@ p {
   margin: auto;
   width: 100;
   text-align: center;
-  font-size: max(10.66px, 1.184vw);
+  /* font-size: max(10.66px, 1.184vw); */
+  font-size: 10.66px;
+  font-size: 1.184vw;
   /* font-size: 100px; */
 }
 
