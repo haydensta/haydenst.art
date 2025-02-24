@@ -16,11 +16,13 @@
 @media only screen and (max-width: 600px) {
   
   p {
-    font-size: 0.5vw;
+    /* font-size: 0.5vw; */
+    font-size: 100px;
   }
 
   .center-box { 
-    font-size: 0.5vw;
+    /* font-size: 0.5vw; */
+    font-size: 100px;
   }
    
 }
