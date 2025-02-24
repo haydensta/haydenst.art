@@ -27,7 +27,8 @@
 
 p {
   line-height: 0.0;
-  font-size: max(10.66px, 1.184vw);
+  /* font-size: max(10.66px, 1.184vw); */
+  font-size: max(6px, 1.184vw);
 }
 
 .center-box {
@@ -35,7 +36,8 @@ p {
   width: 100;
   text-align: center;
   /* was 10.66px */
-  font-size: max(10.66px, 1.184vw);
+  /* font-size: max(10.66px, 1.184vw); */
+  font-size: max(6px, 1.184vw);
   /* font-size: 1.184vw; */
   /* font-size: 100px; */
 }
