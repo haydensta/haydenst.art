@@ -1,6 +1,8 @@
 /* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */ 
+
+/* SHARED CSS */
 ::-moz-selection {
   color: #109111;
   background: #1434A4;
@@ -13,69 +15,113 @@
   text-shadow: none;
 }
 
-@media only screen and (max-width: 600px) {
-  
-  p {
-    font-size: 1.184vw;
-  }
-
-  .center-box { 
-    font-size: 1.184vw;
-  }
-   
-}
-
-p {
-  line-height: 0.0;
-  font-size: max(10.66px, 1.184vw);
-}
-
-.text-scale {
-  line-height: 0.0;
-  font-size: max(10.66, 1.184vw);
-}
-
 .center-box {
   margin: auto;
   width: 100;
   text-align: center;
-  /* was 10.66px */
   font-size: max(10.66px, 1.184vw);
-  /* font-size: 1.184vw; */
-  /* font-size: 100px; */
 }
 
+
 .right-box {
-  /* font-size: 30px; */
   font-size: max(20px, 2.22vw);
   padding-right: 35%;
   text-align: right;
-  /* line-height: 75%;  */
-  /* when replacing p tag */
 }
 
 .right-info {
-  /* font-size: 20px; */
   font-size: max(13.33px, 1.48vw);
   padding-right: 35%;
   padding-bottom: 3%;
   text-align: right;
-  /* line-height: 1; */
 }
 
 .left-box {
-  /* font-size: 30px; */
   font-size: max(20px, 2.22vw);
   padding-left: 35%;
   text-align: left;
-  /* line-height: 75%; */
 }
 
 .left-info {
-  /* font-size: 20px; */
   font-size: max(13.33px, 1.48vw);
   padding-left: 35%;
   padding-bottom: 3%;
   text-align: left;
-  /* line-height: 1; */
+}
+
+/* DESKTOP CSS */
+@media only screen and (min-width: 600px) {
+  p {
+    line-height: 0.0;
+    font-size: max(10.66px, 1.184vw);
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+  
+  .top-line {
+    width:37%;
+    color:#f1f1f1;
+    position:relative;
+    bottom: 7px;
+  }
+  
+  .bottom-line {
+    width:37%; 
+    color:#f1f1f1;
+  }
+
+  .top-margin{
+    margin-bottom: 114px;
+  }
+}
+
+/* MOBILE CSS */
+@media only screen and (max-width: 600px) {
+  p {
+    line-height: 0.0;
+    font-size: max(14px, 1.184vw);
+  }
+
+  .mobile {
+    display: block;
+    font-size: 16px;
+    width: 75%;
+    margin: auto;
+  }
+
+  .text-box {
+    font-size: 16px;
+    width: 66%;
+    margin: auto;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  img {
+    width: 66%;
+  }
+
+  .top-line {
+    width:100%;
+    color:#f1f1f1;
+    position:relative;
+    bottom: 7px;
+  }
+  
+  .bottom-line {
+    width:100%; 
+    color:#f1f1f1;
+  }
+
+  br {
+    margin-bottom: 3%;
+  }
 }

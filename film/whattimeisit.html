@@ -2,6 +2,8 @@
 <html>
 <head>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="stylesheet" type="text/css" href="../style.css">
 
 <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
@@ -134,11 +136,14 @@ a:active {
     </style>
     </head>
   <body>
+
+<!-- pads the top on desktops -->
+<div class="top-margin"></div>
+<!-- <br>
 <br>
 <br>
 <br>
-<br>
-<br>
+<br> -->
 
 <div class="center-box">
   <!-- <p>|</p> -->
@@ -147,41 +152,60 @@ a:active {
   <!-- is this px position method the best way to go about this? check? Find a way to do %s -->
   <p>|</p>
   <p>|</p>
-  <hr style="width:37%; color:#f1f1f1; position:relative; bottom: 7px">
+  <!-- <hr style="width:37%; color:#f1f1f1; position:relative; bottom: 7px"> -->
+  <hr class="top-line">
 
   <h2><a href="https://youtu.be/qD-E7Y5rUPE?si=bUd_k6-Edj3eOiPW">what time is it?</a></h2>
   <p><i>personal doc, 7 minutes, 2024</i></p>
-
+  
   <img src="../images/wtiicover.png">
   <br>
 
-  <!-- Ocean, urban, and in-camera noise are montaged to wash away a stable sense of time and place.<br>
-  A rising tide stirs digital memories, forming an impression of the life of the filmmaker.
-  <br>
-  <br> -->
+  <!-- <p id="w-disp"></p>
+  <script>
+    window.onload = function(){
+      let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+      document.getElementById('w-disp').innerHTML = vw;
+    }
+  </script> -->
 
   <!-- might want to check if okay to do this squishing here (if line size matters >>>>> adaptability) -->
-  An archival film fusing video journal and home video footage by the filmmaker and their mother.
-  <br>
-  <p class="text-scale">Ocean, urban, and in-camera noise are montaged to wash away a stable sense of time and place.</p>
-  <p class="text-scale">Ocean, urban, and in-camera noise are montaged to wash away a stable sense of time and place.</p>
-  <p class="text-scale">A rising tide stirs digital memories, forming an impression of the life of the filmmaker.</p>
-  <br>
-  <br>
+  <!-- <p class="text-scale">An archival film fusing video journal and home video footage by the filmmaker and their mother.</p> -->
 
-  Footage provided by my mom Allison Startzell<br>
-  Developed with guidance from <a href="https://en.wikipedia.org/wiki/Korbett_Matthews"
-    target="_blank">Korbett Matthews</a><br>
-  <br>
+  <div class="text-box">
+    An archival film fusing video journal and home video footage by the filmmaker and their mother.
+    <br>
+    Ocean, urban, and in-camera noise are montaged to wash away a stable sense of time and place.
+    <br>
+    A rising tide stirs digital memories, forming an impression of the life of the filmmaker.
+    <br>
+    <br>
 
-  If you're interested in watching<br>
-  this film, send an email to:<br>
-  <a href="mailto:hstartzell@gmail.com">hstartzell@gmail.com</a><br>
+    Footage provided by my mom Allison Startzell<br>
+    Developed with guidance from <a href="https://en.wikipedia.org/wiki/Korbett_Matthews"
+      target="_blank">Korbett Matthews</a><br>
+    <br>
+  
+    If you're interested in watching<br>
+    this film, send an email to:<br>
+    <a href="mailto:hstartzell@gmail.com">hstartzell@gmail.com</a><br>
+  
+    <br>
+  </div>
 
-  <br>
+  <!-- change width and set margin to auto so it centers within the div. maybe have a different div for mobile, make the desktop one invisible 
+  if on mobile and the mobile one invisible on desktop -->
+
+  <!-- <div class="desktop" style="width: 66%; margin: auto; font-size: 18px;">
+    An archival film fusing video journal and home video footage by the filmmaker and their mother.
+    Ocean, urban, and in-camera noise are montaged to wash away a stable sense of time and place.
+    A rising tide stirs digital memories, forming an impression of the life of the filmmaker.
+    <br><br>
+  </div> -->
 
   <!-- <p>_____________________________________________________________</p> -->
-  <hr style="width:37%; color:#f1f1f1;">
+  <!-- <hr style="width:37%; color:#f1f1f1;"> -->
+  <hr class="bottom-line">
   <p>|</p>
   <p>|</p>
   <p>|</p>
