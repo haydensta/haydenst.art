@@ -30,6 +30,11 @@ p {
   font-size: max(10.66px, 1.184vw);
 }
 
+.text {
+  line-height: 0.0;
+  font-size: max(10.66, 1.184vw);
+}
+
 .center-box {
   margin: auto;
   width: 100;
