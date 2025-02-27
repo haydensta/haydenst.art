@@ -33,29 +33,6 @@
 </script>
     
 <style> 
-
-@media (max-width: 600px) {
-  
-  p {
-    font-size: 8px;
-  }
-  
-  h2 {
-  font-family: Tahoma; sans-serif;
-  }
-
-.container .image {
-  display: none;
-  }
-  
-  a:visited {
-  color:  #1434A4; /*here's the green you had before: 0d700e */
-  background-color: transparent;
-  text-decoration: none;
-  text-shadow: 1px 1px #fff;
-}
-
-}
  
  @font-face {
     font-family: 'HighwayGothic';
@@ -178,14 +155,21 @@ a:active {
   column-gap: 3%;
 }
 
-img {
-  width: 27vw;
-  height: auto;
-}
-
 .text-new  {
   /* width: 25vw; */
   text-align: right;
+}
+
+/* img {
+  width: 27vw;
+  height: auto;
+} */
+
+@media only screen and (min-width: 600) {  
+  img {
+    width: 27vw;
+    height: auto;
+  }
 }
 
     </style>
@@ -196,7 +180,7 @@ img {
       <h1>HAYDEN ST</h1>
       <p>|&nbsp;o&nbsp;|</p>
       <p>|&nbsp;&nbsp; &nbsp;|</p>
-    <hr style="width:50%; color:#f1f1f1; position:relative; bottom: 7px">
+    <hr class="top-line">
 
     <!-- <div class="container">
       <div class="image">
@@ -221,7 +205,7 @@ img {
         </div>
       </div>
 
-    <hr style="width:50%; color:#f1f1f1;">
+    <hr class="bottom-line">
 
     <p>|&nbsp;o&nbsp;|</p>
     <p>|&nbsp;&ensp;&nbsp;|</p>

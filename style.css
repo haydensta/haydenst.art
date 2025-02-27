@@ -114,11 +114,17 @@
     color:#f1f1f1;
     position:relative;
     bottom: 7px;
+    border: none;
+    background-color: #f1f1f1;
+    height: 2.5px;
   }
   
   .bottom-line {
     width:100%; 
     color:#f1f1f1;
+    border: none;
+    background-color: #f1f1f1;
+    height: 2.5px;
   }
 
   br {
