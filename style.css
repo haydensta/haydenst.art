@@ -22,33 +22,6 @@
   font-size: max(10.66px, 1.184vw);
 }
 
-
-.right-box {
-  font-size: max(20px, 2.22vw);
-  padding-right: 35%;
-  text-align: right;
-}
-
-.right-info {
-  font-size: max(13.33px, 1.48vw);
-  padding-right: 35%;
-  padding-bottom: 3%;
-  text-align: right;
-}
-
-.left-box {
-  font-size: max(20px, 2.22vw);
-  padding-left: 35%;
-  text-align: left;
-}
-
-.left-info {
-  font-size: max(13.33px, 1.48vw);
-  padding-left: 35%;
-  padding-bottom: 3%;
-  text-align: left;
-}
-
 /* DESKTOP CSS */
 @media only screen and (min-width: 600px) {
   p {
@@ -78,6 +51,39 @@
 
   .top-margin{
     margin-bottom: 114px;
+  }
+
+  .right-box {
+    font-size: max(20px, 2.22vw);
+    padding-right: 35%;
+    text-align: right;
+  }
+  
+  .right-info {
+    font-size: max(13.33px, 1.48vw);
+    padding-right: 35%;
+    padding-bottom: 3%;
+    text-align: right;
+  }
+  
+  .left-box {
+    font-size: max(20px, 2.22vw);
+    padding-left: 35%;
+    text-align: left;
+  }
+  
+  .left-info {
+    font-size: max(13.33px, 1.48vw);
+    padding-left: 35%;
+    padding-bottom: 3%;
+    text-align: left;
+  }
+
+  .right-box-housekeeping {
+    font-size: max(20px, 2.22vw);
+    padding-right: 35%;
+    text-align: right;
+    white-space: nowrap;
   }
 }
 
@@ -129,5 +135,40 @@
 
   br {
     margin-bottom: 3%;
+  }
+
+  .right-box {
+    font-size: max(20px, 2.22vw);
+    padding-right: 2em;
+    text-align: right;
+  }
+  
+  .right-info {
+    font-size: max(13.33px, 1.48vw);
+    padding-right: 3em;
+    padding-bottom: 3%;
+    text-align: right;
+  }
+  
+  .left-box {
+    font-size: max(20px, 2.22vw);
+    /* font-size: 13.33px; */
+    padding-left: 2em;
+    text-align: left;
+  }
+  
+  .left-info {
+    font-size: max(13.33px, 1.48vw);
+    /* font-size: 18px; */
+    padding-left: 3em;
+    padding-bottom: 3%;
+    text-align: left;
+  }
+
+  .right-box-housekeeping {
+    font-size: max(20px, 2.22vw);
+    padding-right: 2em;
+    text-align: right;
+    white-space: nowrap;
   }
 }
