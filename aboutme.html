@@ -2,45 +2,14 @@
 <html>
 <head>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" type="text/css" href="style.css">
 
 <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
-<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <title>about</title>
 <style> 
-
-@media (max-width: 600px) {
-  
-  p {
-    font-size: 8px;
-  }
-  
-.mobile {
-  display: block;
-}
-  
-  .text {
-  font-size: 12px !important;
-  margin-left: 30px !important;
-  line-height: 0.0;
-  white-space: nowrap;
-}
-
-.textright {
-  font-size: 12px !important;
-  text-align: right;
-  margin-right: 30px !important;
-  line-height: 0.0;
-  white-space: nowrap;
-}
-
-img {
-  width: 70%;
-}
-  
-}
 
 body {
   color: white;
@@ -48,14 +17,14 @@ body {
 }
 
 h1 {
-  font-family: Trebuchet MS; sans-serif;
+  font-family: Trebuchet MS, sans-serif;
   font-size:75px;
   text-decoration: bold;
   line-height: 0.5;
 }
 
 h2 {
-  font-family: Tahoma; sans-serif;
+  font-family: Tahoma, sans-serif;
   font-size: 35px;
   line-height: 0.0px;
   color:  #fff;
@@ -63,23 +32,6 @@ h2 {
   text-decoration: none;
   text-shadow: 2px 2px #109111;
 }
-
-.mobile {
-  display: none;
-}
-
-/* .text {
-  font-size: 20px;
-  margin-left: 485px;
-  line-height: 0.0;
-}
-
-.textright {
-  font-size: 20px;
-  text-align: right;
-  margin-right: 485px;
-  line-height: 0.0;
-} */
 
 .border {
   text-align: center;
@@ -161,32 +113,116 @@ a:active {
   
 }
 
-.textleft {
-  font-size: 20px;
-  text-align: left;
-  margin-left: 36.5%;
-  line-height: 97%;
-}
+/* @media only screen and () */
 
-.textright {
+/* .textright {
   font-size: 20px;
+  font-size: max(16px, 1.148vw);
   text-align: right;
   margin-right: 36.5%;
   line-height: 97%;
 }
 
-p {
-  line-height: 0.0;
-}
-
-/* .image-text {
-  width: 100vw;
-  height: auto;
+.textleft {
+  font-size: 20px;
+  font-size: max(16px, 1.148vw);
+  text-align: left;
+  margin-left: 36.5%;
+  line-height: 97%;
 } */
 
-img {
-  width: 30vw;
-  height: auto;
+/* @media only screen and (max-width: 600)  {
+  .textright {
+    margin-right: 36.5%;
+  }
+  
+  .textleft {
+    margin-left: 36.5%;
+  }
+
+} */
+
+@media only screen and (max-width: 600px) {
+  .textright-desktop {
+    display: none
+  }
+
+  .textleft-desktop {
+    display: none;
+  }
+
+  .textright-mobile {
+    display: block;
+  }
+
+  .textleft-mobile {
+    display: block;
+  }
+
+  img {
+    width: 50vw;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .textright-desktop {
+    display: block;
+  }
+
+  .textleft-desktop{
+    display: block;
+  }
+
+  .textright-mobile {
+    display: none;
+  }
+
+  .textleft-mobile {
+    display: none;
+  }
+
+  img {
+    width: 30vw;
+    height: auto;
+  }
+
+  .top-line {
+    width: 50%;
+  }
+
+  .bottom-line {
+    width: 50%;
+  }
+}
+
+.textright-desktop {
+  font-size: min(25px, 2.1vw);
+  text-align: right;
+  margin-right: 13.5em;
+  line-height: 97%;
+}
+  
+.textleft-desktop {
+  font-size: min(25px, 2.1vw);
+  text-align: left;
+  margin-left: 13.5em;
+  line-height: 97%;
+}
+
+.textright-mobile {
+  font-size: 2.8vw;
+  /* font-size: 1px; */
+  text-align: right;
+  margin-right: 2em;
+  line-height: 20%;
+}
+  
+.textleft-mobile {
+  font-size: 2.8vw;
+  text-align: left;
+  margin-left: 2em;
+  line-height: 20%;
 }
 
 </style>
@@ -204,10 +240,10 @@ img {
   <!-- is this px position method the best way to go about this? check? Find a way to do %s -->
   <p>|</p>
   <p>|</p>
-  <hr style="width:37%; color:#f1f1f1; position:relative; bottom: 7px">
+  <hr class="top-line">
   <br>
 
-  <div class="textright">
+  <div class="textright-desktop">
     I'm Hayden Startzell. This is my little place here.<br>
     I see myself as a writer and a filmmaker. I don't know which came first.<br>
     It's a chicken-egg situation because the first time I felt like<br> 
@@ -216,7 +252,30 @@ img {
     Life's complicated like that.<br>
   </div>
 
-  <div class="textleft">
+  <div class="textleft-desktop">
+    I have extensive<br>
+    experience in video editing and<br>
+    photoshop tomfoolery and lifting heavy things but also do things like<br>
+    art criticism and film and fiction writing and filmmaking. I'd like<br>
+    to keep doing all of these probably until I die,<br>
+    so if you'd like to do them with<br>
+    me before that happens,<br>
+    please reach out to me<br>
+    at the address below:<br>
+  </div>
+
+  <div class="textright-mobile">
+    I'm Hayden Startzell. This is my little place here.<br>
+    I see myself as a writer and a filmmaker. I don't know which came first.<br>
+    It's a chicken-egg situation because the first time I felt like<br> 
+    a writer was when I was two and got a notebook<br>
+    for Christmas while I was being filmed.<br>
+    Life's complicated like that.<br>
+  </div>
+
+  <!-- <br><br><br> -->
+
+  <div class="textleft-mobile">
     I have extensive<br>
     experience in video editing and<br>
     photoshop tomfoolery and lifting heavy things but also do things like<br>
@@ -238,7 +297,7 @@ img {
 
   <p>taken by my friend <a href="https://meera-singh.com/" target="_blank">Meera Singh</a></p>
 
-  <hr style="width:37%; color:#f1f1f1;">
+  <hr class="bottom-line">
   <p>|</p>
   <p>|</p>
   <p>|</p>

@@ -146,13 +146,37 @@ a:active {
   
 }
 
-.container-new {
-  display: grid;
-  position: relative;
-  padding-left: 30%;
-  align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 3%;
+@media only screen and (max-width: 600px) {
+    .container-new {
+    display: grid;
+    position: relative;
+    padding-left: 8%;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3%;
+  }
+
+  img {
+    width: 50vw;
+    height: auto;
+  }
+} 
+
+@media only screen and (min-width: 600px) {
+  .container-new {
+    display: grid;
+    position: relative;
+    padding-left: 30%;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3%;
+  }
+
+  img {
+    width: 27vw;
+    height: auto;
+  }
+
 }
 
 .text-new  {
@@ -160,17 +184,12 @@ a:active {
   text-align: right;
 }
 
-/* img {
-  width: 27vw;
-  height: auto;
-} */
-
-@media only screen and (min-width: 600) {  
+/* @media only screen and (min-width: 600) {  
   img {
     width: 27vw;
     height: auto;
   }
-}
+} */
 
     </style>
     </head>
@@ -201,7 +220,6 @@ a:active {
           <h2><a href="./writing">writing</a></h2>
           <h2><a href="socials.html">socials</a></h2>
           <h2><a href="aboutme.html">about</a></h2>
-          <h2><a href="test.html">test</a></h2>
         </div>
       </div>
 
